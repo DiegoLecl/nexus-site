@@ -1,0 +1,336 @@
+@media (max-width: 900px) {
+  .navigation {
+    gap: 20px;
+  }
+  .hero-orbit-one {
+    right: -300px;
+  }
+  .hero-orbit-two {
+    right: -230px;
+  }
+  .project-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-info .text-link {
+    grid-column: 1 / -1;
+  }
+  .about-layout {
+    gap: 45px;
+  }
+  .about-mark {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --gutter: 22px;
+  }
+  .header-inner {
+    min-height: 72px;
+  }
+  .menu-toggle {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    width: 42px;
+    height: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    cursor: pointer;
+  }
+  .menu-toggle span {
+    display: block;
+    width: 17px;
+    height: 1px;
+    background: white;
+    transition: transform .2s ease;
+  }
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+  .navigation {
+    position: absolute;
+    top: 71px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 12px var(--gutter) 22px;
+    background: #151518;
+    border-bottom: 1px solid var(--color-border);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity .2s ease, transform .2s ease, visibility .2s;
+  }
+  .navigation.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .navigation > a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .navigation .nav-contact {
+    margin-top: 12px;
+    padding: 13px 14px;
+    text-align: center;
+    border: 1px solid var(--color-border);
+  }
+  .hero {
+    min-height: 690px;
+    min-height: min(760px, calc(100svh - 72px));
+  }
+  .hero-content {
+    padding-block: 90px 110px;
+  }
+  .hero-title {
+    margin-top: 27px;
+    font-size: clamp(53px, 13vw, 82px);
+  }
+  .hero-bottom {
+    align-items: start;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .hero-description {
+    max-width: 290px;
+    font-size: 14px;
+  }
+  .round-link {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  .hero-orbit-one {
+    width: 420px;
+    height: 420px;
+    right: -270px;
+    top: 24%;
+  }
+  .hero-orbit-two {
+    width: 300px;
+    height: 300px;
+    right: -200px;
+    top: 34%;
+  }
+  .hero-wordmark {
+    right: -5%;
+    top: 62%;
+    font-size: 210px;
+  }
+  .hero-index {
+    bottom: 32px;
+  }
+  .intro-strip-inner {
+    min-height: 60px;
+    justify-content: flex-start;
+    width: max-content;
+    gap: 17px;
+    padding-inline: 22px;
+  }
+  .intro-strip-inner span {
+    white-space: nowrap;
+  }
+  .section-padding {
+    padding-block: 82px;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 38px;
+  }
+  .section-heading h2, .about-copy h2 {
+    font-size: clamp(39px, 10vw, 58px);
+  }
+  .section-note {
+    margin-top: 22px;
+  }
+  .project-list {
+    gap: 48px;
+  }
+  .project-card-featured .project-visual {
+    min-height: 390px;
+  }
+  .mock-browser {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+  }
+  .mock-lubia {
+    inset: 46px 12px 12px;
+    padding: 50px 24px;
+  }
+  .mock-lubia p {
+    font-size: clamp(44px, 12vw, 72px);
+  }
+  .mock-lubia-shape {
+    width: 43%;
+    right: -2%;
+    top: 20%;
+    opacity: .7;
+  }
+  .project-info {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+  .project-info > p {
+    max-width: 440px;
+  }
+  .project-info .text-link {
+    grid-column: auto;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .project-grid .project-visual {
+    min-height: 300px;
+  }
+  .health-layout strong {
+    font-size: 45px;
+  }
+  .health-layout i {
+    left: 200px;
+    font-size: 60px;
+  }
+  .visual-campaign > p {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+  .service-row {
+    grid-template-columns: 34px 1fr 20px;
+    gap: 12px;
+    padding: 23px 0;
+  }
+  .service-row p {
+    font-size: 12px;
+  }
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .about-mark {
+    min-height: 250px;
+    max-height: 300px;
+  }
+  .about-mark > span:first-child {
+    font-size: 230px;
+  }
+  .about-mark-x {
+    font-size: 230px;
+  }
+  .contact-section {
+    padding-top: 0;
+  }
+  .contact-panel {
+    padding: 42px 25px;
+  }
+  .contact-panel h2 {
+    font-size: clamp(45px, 12vw, 70px);
+  }
+  .contact-decoration {
+    right: -35px;
+    bottom: -55px;
+    font-size: 190px;
+  }
+  .footer-main {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer-main > p {
+    order: 3;
+    width: 100%;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 49px;
+  }
+  .eyebrow {
+    font-size: 9px;
+  }
+  .project-card-featured .project-visual {
+    min-height: 350px;
+  }
+  .health-layout i {
+    left: 170px;
+  }
+}
+
+@media (max-width: 680px) {
+  .mock-browser {
+    border-radius: 14px 14px 0 0;
+  }
+  .project-visual {
+    border-radius: 22px;
+  }
+}
+
+/* Nexus: SVGs próprios — aparência uniforme em iOS e Android. */
+.nexus-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  vertical-align: -0.12em;
+  stroke: currentColor;
+}
+
+.strip-star .nexus-icon, .health-layout i .nexus-icon, .process-symbol .nexus-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.footer-top span {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Projeto Alessandra: respeita proporção da captura de tela (1366 × 605).
+   Regras mais específicas neutralizam min-height do cartão em todos os breakpoints. */
+.project-card-featured .project-visual.visual-lubia {
+  display: block;
+  min-height: 0;
+  height: auto;
+  aspect-ratio: 1366 / 605;
+  overflow: hidden;
+  background: #e8ded7;
+}
+
+.project-card-featured .project-visual.visual-lubia > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 680px) {
+  .project-card-featured .project-visual.visual-lubia {
+    min-height: 0;
+    border-radius: 16px;
+  }
+  .project-card-featured .project-visual.visual-lubia > img {
+    width: 100%;
+    height: auto;
+  }
+  .health-layout i {
+    left: auto;
+    right: 8%;
+  }
+}

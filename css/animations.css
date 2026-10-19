@@ -1,0 +1,39 @@
+html.motion-ready .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+
+html.motion-ready .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-visual {
+  transition: transform .45s var(--ease), filter .45s var(--ease);
+}
+
+.project-visual:hover {
+  filter: brightness(1.06);
+}
+
+.project-visual:hover .mock-lubia-shape {
+  transform: rotate(34deg) scale(1.04);
+}
+
+.mock-lubia-shape {
+  transition: transform .6s var(--ease);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  html.motion-ready .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

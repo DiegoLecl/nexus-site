@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --color-bg: #050506;
+  --color-bg-soft: #0c0b0e;
+  --color-panel: #121015;
+  --color-white: #faf8fb;
+  --color-muted: #a8a2ad;
+  --color-purple: #d400c7;
+  --color-purple-bright: #f20be2;
+  --color-border: rgba(255,255,255,.12);
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --container: 1160px;
+  --gutter: clamp(22px, 5vw, 72px);
+  --radius: 22px;
+  --ease: cubic-bezier(.2,.75,.25,1);
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Substitua pelo domínio definitivo depois da publicação.
+# Sitemap: https://www.seudominio.com.br/sitemap.xml
